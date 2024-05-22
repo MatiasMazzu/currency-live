@@ -51,7 +51,6 @@ app.get('/dolares/blue/compra', async (req, res) => {
   } catch (error) {
       console.error('Error:', error);
       if (!res.headersSent) {
-       
         res.status(500).json({ error: 'Error fetching data' });
       }
   }
@@ -77,5 +76,6 @@ app.get('/dolares/blue/venta', async (req, res) => {
     }
 }
 });
+
 
 main();
